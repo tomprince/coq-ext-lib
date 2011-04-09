@@ -1,0 +1,2 @@
+INITVO = "$(shell $(COQDEP) -sort $(COQLIBS) states/MakeInitial.v)"
+OTHERVO = "$(filter-out $(INITVO), $(VOFILES))"
